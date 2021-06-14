@@ -1,0 +1,130 @@
+.waterfactrycontent {
+    display: flex;
+    flex-flow: row;
+    // width: 100%;
+    width: 99%;
+    //height: 160px;
+    border: 1px solid #D8E0E6;
+    border-top: none;
+    border-bottom: none;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    .SvgIconClassDeleteBox {
+        display: none;
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        z-index: 6;
+        cursor: pointer;
+        .SvgIconClassDelete {
+            width: 16px;
+            height: 16px;
+            color: #A4ABB4;
+        }
+    }
+    &:hover .SvgIconClassDeleteBox {
+        display: block;
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        z-index: 6;
+        cursor: pointer;
+        .SvgIconClassDelete {
+            width: 16px;
+            height: 16px;
+            color: #A4ABB4;
+        }
+    }
+    .waterfactrycontent_left {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 19.3%;
+        //height: 160px;
+        border-right: 1px solid #D8E0E6;
+        box-sizing: border-box;
+        .waterfactrycontent_left_Title {
+            width: 194px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: linear-gradient(0deg, #EDEDEF, #FFFFFF);
+            border: 1px solid #E4E4EC;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: bold;
+            color: $Tabs_fontColor;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .waterfactrycontent_left_contentbox {
+            width: 194px;
+            .contentbox1 {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 194px;
+                @extend .Title;
+                @extend .Num
+            }
+            .contentbox2 {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 194px;
+                margin-top: 12px;
+                @extend .Title;
+                @extend .Num
+            }
+        }
+    }
+    .waterfactrycontent_right {
+        width: 83.2%;
+        //  height: 160px;
+        position: relative;
+        .selectoutbox {
+            width: 107px;
+            height: 23px;
+            background: #{$Tabs_bgColor};
+            border: 1px solid #{$borderColor};
+            // box-sizing: border-box;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 99;
+            /deep/ .el-input__inner {
+                background-color: transparent;
+                border: none;
+                font-size: $fontSize12;
+                font-family: $fontStyleWYYH;
+                font-weight: 400;
+                color: $Sc_beng_fontColor;
+                height: 18px;
+                line-height: 16px;
+            }
+            /deep/ .el-input__icon {
+                height: 100%;
+                width: 25px;
+                text-align: center;
+                line-height: 23px;
+            }
+        }
+    }
+}
+
+//公用样式
+.Title {
+    font-size: $fontSize12;
+    font-family: $fontStyleWYYH;
+    font-weight: 400;
+    color: $Title_second_fontColor;
+}
+
+.Num {
+    font-size: $fontSize12;
+    font-family: $fontStyleWYYH;
+    font-weight: bold;
+    color: $Title_second_content_fontColor;
+}

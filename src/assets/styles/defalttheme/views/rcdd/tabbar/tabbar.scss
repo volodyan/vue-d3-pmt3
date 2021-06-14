@@ -1,0 +1,39 @@
+.tabbar {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    width: 100%;
+    height: 73px;
+    background: $List_Row_bgColor;
+    //  border: 1px solid #D8E0E6;
+    border-top: none;
+    // box-sizing: border-box;
+    .itembox {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        width: 141px;
+        height: 30px;
+        background: rgba(35, 66, 111, 0);
+        border: 1px solid #D8E0E6;
+        border-radius: 15px;
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0px;
+        }
+        font-size: $fontSize12;
+        font-family: $fontStyleWYYH;
+        font-weight: bold;
+        color: $Title_second_content_fontColor;
+        cursor: pointer;
+        &:hover {
+            background: $Tabs_active_bgColor;
+            color: $Tabs_active_fontColor;
+        }
+    }
+    .activeitembox {
+        background: $Tabs_active_bgColor;
+        color: $Tabs_active_fontColor;
+    }
+}

@@ -1,0 +1,10 @@
+@import './themeConfig/themeConfig';
+@import './common/common.scss';
+@import './views/views';
+@import './components/index';
+// the :export directive is the magic sauce for webpack
+// https://www.bluematador.com/blog/how-to-share-variables-between-js-and-sass
+:export {
+    sideBarWidth: $sideBarWidth;
+    // bgColor_eee: $bgColor_eee
+}

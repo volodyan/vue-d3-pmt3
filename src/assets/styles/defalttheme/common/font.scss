@@ -1,0 +1,11 @@
+/* 定义 */
+
+@font-face {
+    font-family: "DS-DIGI";
+    src: url("~@/assets/fonts/DS-DIGI.ttf") format("truetype"), url("~@/assets/fonts/DS-DIGI.woff2") format("woff2") format("woff"), url("~@/assets/fonts/DS-DIGI.eot") format("embedded-opentype")
+}
+
+//使用
+.number_digital {
+    font-family: "DS-DIGI";
+}

@@ -1,0 +1,128 @@
+.controlpresure {
+    // width: 100%;
+    width: 99%;
+    border: 1px solid #D8E0E6;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    .SvgIconClassDeleteBox {
+        display: none;
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        z-index: 6;
+        cursor: pointer;
+        .SvgIconClassDelete {
+            width: 16px;
+            height: 16px;
+            color: #A4ABB4;
+        }
+    }
+    &:hover .SvgIconClassDeleteBox {
+        display: block;
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        z-index: 6;
+        cursor: pointer;
+        .SvgIconClassDelete {
+            width: 16px;
+            height: 16px;
+            color: #A4ABB4;
+        }
+    }
+    .controlpresure_top {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 100%;
+        padding: 21px 0;
+        .controlpresure_top_left {
+            font-size: $fontSize14;
+            font-family: $fontStyleWYYH;
+            font-weight: bold;
+            color: $ListTitle_fontColor;
+            margin-left: 10px;
+        }
+        .controlpresure_top_right {
+            margin-right: 10px;
+            width: 56px;
+            height: 24px;
+            background: linear-gradient(0deg, #EDEDEF, #FFFFFF);
+            border: 1px solid #E4E4EC;
+            line-height: 22px;
+            text-align: center;
+            box-sizing: border-box;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: 400;
+            color: $ListTitle_fontColor;
+            cursor: pointer;
+        }
+    }
+    .controlpresure_bottom_Title {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        margin: 0 10px;
+        width: 97.2%;
+        /deep/ .el-table__empty-block {
+            display: none;
+        }
+    }
+    .controlpresure_bottom {
+        margin: 0 10px;
+        margin-bottom: 12px;
+        width: 97.2%;
+        /deep/ .el-table th.is-leaf,
+        .el-table td {
+            border-bottom: none;
+        }
+        /deep/ .el-table th {
+            padding: 0;
+            height: 40px;
+            vertical-align: middle;
+            position: relative;
+            text-align: left;
+        }
+        /deep/ .el-table td {
+            padding: 0;
+            height: 40px;
+            vertical-align: middle;
+            position: relative;
+            text-align: left;
+        }
+        /deep/ .el-table .cell {
+            box-sizing: border-box;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: normal;
+            word-break: break-all;
+            line-height: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: 400;
+            color: $Table_fontColor;
+        }
+        /deep/ .oddRowStyle {
+            background: $Tabs_bgColor!important;
+        }
+        /deep/ .evenRowStyle {}
+        .LookEchartsicon {
+            margin-right: 15px;
+        }
+        /deep/ .el-table tbody tr:hover>td {
+            background: inherit;
+        }
+        .SvgIconClass {
+            width: 16px;
+            height: 16px;
+        }
+        .imgstyle {
+            cursor: pointer;
+        }
+    }
+}

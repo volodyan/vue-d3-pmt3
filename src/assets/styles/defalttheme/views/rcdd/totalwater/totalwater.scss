@@ -1,0 +1,101 @@
+.totalwater {
+    display: flex;
+    flex-flow: row;
+    // width: 100%;
+    width: 99%;
+    height: 153px;
+    border: 1px solid #D8E0E6;
+    border-top: none;
+    box-sizing: border-box;
+    background: #fff;
+    margin-bottom: 20px;
+    position: relative;
+    .SvgIconClassDeleteBox {
+        display: none;
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        z-index: 6;
+        cursor: pointer;
+        .SvgIconClassDelete {
+            width: 16px;
+            height: 16px;
+            color: #A4ABB4;
+        }
+    }
+    &:hover .SvgIconClassDeleteBox {
+        display: block;
+        position: absolute;
+        top: -8px;
+        right: -5px;
+        z-index: 6;
+        cursor: pointer;
+        .SvgIconClassDelete {
+            width: 16px;
+            height: 16px;
+            color: #A4ABB4;
+        }
+    }
+    .totalwater_left {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 19.3%;
+        height: 153px;
+        border-right: 1px solid #D8E0E6;
+        box-sizing: border-box;
+        .totalwater_left_Title {
+            width: 194px;
+            height: 24px;
+            line-height: 24px;
+            text-align: center;
+            background: linear-gradient(0deg, #EDEDEF, #FFFFFF);
+            border: 1px solid #E4E4EC;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: bold;
+            color: $Tabs_fontColor;
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .totalwater_left_contentbox {
+            width: 194px;
+            .contentbox1 {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 194px;
+                @extend .Title;
+                @extend .Num
+            }
+            .contentbox2 {
+                display: flex;
+                flex-flow: row nowrap;
+                justify-content: space-between;
+                width: 194px;
+                margin-top: 12px;
+                @extend .Title;
+                @extend .Num
+            }
+        }
+    }
+    .totalwater_right {
+        width: 83.2%;
+        height: 153px;
+    }
+}
+
+//公用样式
+.Title {
+    font-size: $fontSize12;
+    font-family: $fontStyleWYYH;
+    font-weight: 400;
+    color: $Title_second_fontColor;
+}
+
+.Num {
+    font-size: $fontSize12;
+    font-family: $fontStyleWYYH;
+    font-weight: bold;
+    color: $Title_second_content_fontColor;
+}

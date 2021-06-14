@@ -1,0 +1,61 @@
+.ddplate {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    // width: 100%;
+    width: 99%;
+    height: 40px;
+    background: #fff;
+    margin-top: 25px;
+    border: 1px solid #D8E0E6;
+    border-bottom: none;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    .ddplate_left {
+        margin-left: 10px;
+        font-size: $fontSize18;
+        font-family: $fontStyleWYYH;
+        font-weight: bold;
+        color: $ListTitle_fontColor;
+    }
+    .ddplate_right {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 20px;
+        .ddplate_right_button1 {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            width: 105px;
+            height: 28px;
+            background: $Button_bgColor;
+            border-radius: 2px;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: 400;
+            color: $Button_fontColor;
+            cursor: pointer;
+        }
+        .ddplate_right_button2 {
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+            //margin-right: 10px;
+            width: 105px;
+            height: 28px;
+            background: $Button_bgColor;
+            border-radius: 2px;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: 400;
+            color: $Button_fontColor;
+            cursor: pointer;
+        }
+    }
+}

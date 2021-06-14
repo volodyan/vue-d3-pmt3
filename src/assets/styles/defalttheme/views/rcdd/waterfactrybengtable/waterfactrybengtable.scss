@@ -1,0 +1,340 @@
+    .waterfactrybengtable {
+        // width: 100%;
+        width: 99%;
+        background: $Theme_bgColor;
+        padding-bottom: 20px;
+        .tableoutbox {
+            width: calc(100% - 40px);
+            padding-left: 20px;
+            //padding-bottom: 20px;
+            padding-bottom: 10px;
+            .tableContentoutbox {
+                // max-height: 318px;
+                width: 100%;
+                .tableContentoutbox_scrollbox {
+                    display: flex;
+                    flex-flow: row;
+                    width: 100%;
+                    .tableContentoutbox_scrollbox_left {
+                        width: 6.75%;
+                        min-width: 75px;
+                        font-size: $fontSize12;
+                        font-family: $fontStyleWYYH;
+                        font-weight: 400;
+                        color: $Sc_table_normal_fontColor;
+                        .tabletitle_left {
+                            display: flex;
+                            flex-flow: row;
+                            justify-content: center;
+                            align-items: center;
+                            width: 6.75%;
+                            min-width: 75px;
+                            font-size: $fontSize12;
+                            font-family: $fontStyleWYYH;
+                            font-weight: 400;
+                            color: $Sc_table_normal_fontColor;
+                            text-align: center;
+                            height: 28px;
+                        }
+                        .leftContentoutbox {
+                            width: 6.75%;
+                            min-width: 75px;
+                            font-size: $fontSize12;
+                            font-family: $fontStyleWYYH;
+                            font-weight: 400;
+                            color: $Sc_table_normal_fontColor;
+                            .itembox {
+                                display: flex;
+                                flex-flow: row;
+                                justify-content: center;
+                                align-items: center;
+                                // width: 75px;
+                                height: 48px;
+                                border-radius: 4px 0px 0px 4px;
+                                margin-bottom: 6px;
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                    .centerAndrightScrolloutbox {
+                        display: flex;
+                        flex-flow: row;
+                        width: 93.25%;
+                        max-width: 1162px;
+                        overflow-y: auto;
+                        &::-webkit-scrollbar {
+                            width: 10px;
+                            height: 10px;
+                            background-color: #F5F5F5;
+                            background-color: transparent;
+                        }
+                        /*定义滚动条轨道 内阴影+圆角*/
+                        &::-webkit-scrollbar-track {
+                            //  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+                            border-radius: 10px;
+                            background-color: #F5F5F5;
+                            background-color: transparent;
+                        }
+                        /*定义滑块 内阴影+圆角*/
+                        &::-webkit-scrollbar-thumb {
+                            border-radius: 10px;
+                            // -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+                            background-color: #A2A1A6;
+                        }
+                        .tableContentoutbox_scrollbox_center {
+                            width: 29%;
+                            min-width: 420px;
+                            .tabletitle_center {
+                                display: flex;
+                                flex-flow: row;
+                                align-items: center;
+                                height: 28px;
+                                width: 29%;
+                                min-width: 420px;
+                                font-size: $fontSize12;
+                                font-family: $fontStyleWYYH;
+                                font-weight: 400;
+                                color: $Sc_table_normal_fontColor;
+                                .itembox {
+                                    &:first-child {
+                                        width: 48px;
+                                    }
+                                    width: calc((100% - 48px) / 4);
+                                }
+                            }
+                            .centerContentoutbox {
+                                width: 29%;
+                                min-width: 420px;
+                                .itembox {
+                                    display: flex;
+                                    flex-flow: column;
+                                    justify-content: center;
+                                    width: 100%;
+                                    height: 48px;
+                                    background: #1F3451;
+                                    box-shadow: 0px 1px 0px 0px #3F5E8A, 0px 3px 5px 0px rgba(0, 0, 0, 0.35) inset;
+                                    border-radius: 0px 0px 0px 0px;
+                                    margin-bottom: 6px;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                    .itembox_top {
+                                        display: flex;
+                                        flex-flow: row;
+                                        align-items: center;
+                                        width: 100%;
+                                        height: 20px;
+                                        .itembox_top_itembox {
+                                            display: flex;
+                                            flex-flow: row;
+                                            align-items: center;
+                                            font-size: $fontSize12;
+                                            font-family: $fontStyleWYYH;
+                                            font-weight: 400;
+                                            color: $Sc_table_normal_fontColor;
+                                            &:first-child {
+                                                width: 48px;
+                                                text-indent: 10px;
+                                            }
+                                            width: calc((100% - 48px) / 4);
+                                            .itemspan {
+                                                display: inline-block;
+                                                //padding: 1px 3px;
+                                            }
+                                        }
+                                    }
+                                    .itembox_bottom {
+                                        display: flex;
+                                        flex-flow: row;
+                                        align-items: center;
+                                        width: 100%;
+                                        height: 20px;
+                                        .itembox_bottom_itembox {
+                                            display: flex;
+                                            flex-flow: row;
+                                            align-items: center;
+                                            font-size: $fontSize12;
+                                            font-family: $fontStyleWYYH;
+                                            font-weight: 400;
+                                            color: $Sc_table_normal_fontColor;
+                                            &:first-child {
+                                                width: 48px;
+                                                text-indent: 10px;
+                                            }
+                                            width: calc((100% - 48px) / 4);
+                                            .itemspan {
+                                                display: inline-block;
+                                                // padding: 1px 3px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .tableContentoutbox_scrollbox_right {
+                            // width: 64%;
+                            // height: 48px;
+                            .tabletitle_right {
+                                display: flex;
+                                flex-flow: row;
+                                align-items: center;
+                                height: 28px;
+                                margin-left: 102px;
+                                .itembox {
+                                    width: 42px;
+                                    height: 16px;
+                                    font-size: $fontSize12;
+                                    font-family: $fontStyleWYYH;
+                                    font-weight: 400;
+                                    color: $Sc_table_normal_fontColor;
+                                    margin-right: 34px;
+                                    // background: red;
+                                    text-align: center;
+                                    &:last-child {
+                                        margin-right: 25px;
+                                    }
+                                }
+                            }
+                            .rightContentoutbox {
+                                .itembox {
+                                    display: flex;
+                                    flex-flow: column;
+                                    justify-content: center;
+                                    height: 48px;
+                                    background: #1F3451;
+                                    box-shadow: 0px 1px 0px 0px #3F5E8A, 0px 3px 5px 0px rgba(0, 0, 0, 0.35) inset;
+                                    border-radius: 0px 4px 0px 0px;
+                                    margin-bottom: 6px;
+                                    &:last-child {
+                                        margin-bottom: 0;
+                                    }
+                                    .itembox_top {
+                                        display: flex;
+                                        flex-flow: row;
+                                        align-items: center;
+                                        margin-left: 102px;
+                                        .itembox_top_itembox {
+                                            width: 42px;
+                                            height: 16px;
+                                            font-size: $fontSize12;
+                                            font-family: $fontStyleWYYH;
+                                            font-weight: 400;
+                                            color: $Sc_beng_fontColor;
+                                            margin-right: 34px;
+                                            text-align: center;
+                                            line-height: 14px;
+                                            //   background: linear-gradient(0deg, #56667D, #6E82A0);
+                                            border: 1px solid #1A212B;
+                                            border-radius: 2px;
+                                            box-sizing: border-box;
+                                            &:last-child {
+                                                margin-right: 25px;
+                                            }
+                                        }
+                                    }
+                                    .itembox_bottom {
+                                        display: flex;
+                                        flex-flow: row;
+                                        align-items: center;
+                                        margin-left: 102px;
+                                        margin-top: 2px;
+                                        .itembox_bottom_itembox {
+                                            width: 42px;
+                                            height: 16px;
+                                            font-size: $fontSize12;
+                                            font-family: $fontStyleWYYH;
+                                            font-weight: 400;
+                                            color: $Sc_beng_fontColor;
+                                            margin-right: 34px;
+                                            text-align: center;
+                                            line-height: 14px;
+                                            // background: linear-gradient(0deg, #56667D, #6E82A0);
+                                            border: 1px solid #1A212B;
+                                            border-radius: 2px;
+                                            box-sizing: border-box;
+                                            &:last-child {
+                                                margin-right: 25px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //公用样式
+    .out_is_correct_Warning_style {
+        background: #9D2626;
+        border: 1px solid #D03636;
+        box-sizing: border-box;
+    }
+    
+    .Currentstatus_close {
+        //background-color: #414d5e;
+        background-color: #822d2d;
+    }
+    
+    .Currentstatus_yichang {
+        background-image: url("~@/assets/img/异常.png");
+        background-repeat: no-repeat;
+        background-position: 11px 2px;
+        background-color: red；
+    }
+    
+    .Currentstatus_zhuansuopen {
+        background-color: #5e801c;
+    }
+    
+    .Currentstatus_dingsuopen {
+        background-color: #5e801c;
+    }
+    
+    .Forecastzhuansubianhuaclose {
+        // background-color: #a2b5cf;
+        background-color: #f64949;
+    }
+    
+    .Forecastzhuansubianhuayichang {
+        background-color: red;
+    }
+    
+    .Forecastzhuansubianhuaopen_budingsu {
+        background-color: #abe931;
+    }
+    
+    .Forecastzhuansubianhuaopen_dingsu {
+        background-color: #abe931;
+    }
+    
+    .Forecastzhuansububianhuaclose {
+        //background-color: #414d5e;
+        background-color: #822d2d;
+    }
+    
+    .Forecastzhuansububianhuayichang {
+        background-color: red;
+    }
+    
+    .Forecastzhuansububianhuaopen_budingsu {
+        background-color: #5e801c;
+    }
+    
+    .Forecastzhuansububianhuaopen_dingsu {
+        background-color: #5e801c;
+    }
+    
+    .colorshowname {
+        background-color: #70991f;
+        box-shadow: 0px 1px 0px 0px #3F5E8A, 0px 3px 5px 0px rgba(0, 0, 0, 0.35) inset;
+    }
+    
+    .normalcolorshowname {
+        background: #1F3451;
+        box-shadow: 0px 1px 0px 0px #3F5E8A, 0px 3px 5px 0px rgba(0, 0, 0, 0.35) inset;
+    }

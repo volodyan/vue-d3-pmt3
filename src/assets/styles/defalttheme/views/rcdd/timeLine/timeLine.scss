@@ -1,0 +1,300 @@
+.timeLine {
+    display: flex;
+    flex-flow: row;
+    // width: 100%;
+    width: 99%;
+    height: 27px;
+    background: $Theme_bgColor2;
+    .timeLine_left {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 215px;
+        height: 27px;
+        border-right: 1px solid #1A273B;
+        box-sizing: border-box;
+        .timeLine_left_left {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: 400;
+            color: $time_bgColor;
+            margin-left: 16px;
+            .numbox {
+                display: inline-block;
+                margin-right: 2px;
+                max-width: 40px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+        }
+        .timeLine_left_right {
+            width: 54px;
+            height: 16px;
+            background: #ABE931;
+            border-radius: 2px;
+            font-size: $fontSize12;
+            font-family: $fontStyleWYYH;
+            font-weight: 400;
+            color: $time_fontColor;
+            text-align: center;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+    }
+    .timeLine_right {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        align-items: center;
+        width: calc(100% - 215px);
+        height: 27px;
+        position: relative;
+        .timeLine_right_contentbox {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: flex-end;
+            align-items: center;
+            width: 963px;
+            height: 42px;
+            margin-right: 37px;
+            position: relative;
+            /*  background-color: #1f688a; */
+            /* 需要定位的点击hover的刻度线开始 */
+            .timeLine_right_contentbox_num {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+                width: 958px;
+                height: 14px;
+                margin-bottom: 2px;
+                margin-left: -9px
+                /*   background-color: blueviolet */
+            }
+            .kdnum {
+                color: #5e6b7f;
+                font: normal 12px "微软雅黑";
+                margin-bottom: 2px;
+            }
+            .timeLine_right_contentbox_kedu {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 963px;
+                margin-bottom: 2px;
+                /* background-color:#647185 */
+                .longkd {
+                    height: 6px;
+                    background-color: #647185;
+                }
+                .shortkd {
+                    height: 4px;
+                    background-color: #647185;
+                }
+            }
+            .timeLine_right_contentbox_dwkeduline {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: flex-end;
+                width: 965px;
+                height: 27px;
+                position: absolute;
+                right: -4px;
+                z-index: 22;
+                cursor: pointer;
+                /* background-color: blueviolet */
+                .linep {
+                    width: 3px;
+                    height: 24px;
+                    pointer-events: none;
+                }
+                .linep:hover {
+                    background-color: #abe931 !important;
+                    border-right: 1px solid #abe931 !important;
+                    /*  border: none!important; */
+                    height: 24px;
+                    /*  border-left:1px solid #abe931 !important; */
+                }
+                .stateactive {
+                    height: 24px;
+                    /* background-color: #5f8b09; */
+                    border-right: 1px solid #5f8b09 !important;
+                    pointer-events: auto;
+                }
+                #clicactive {
+                    height: 24px;
+                    /* background-color:#abe931 !important; */
+                    border-right: 1px solid #abe931 !important;
+                    pointer-events: auto;
+                }
+                /* 需要定位的点击hover的刻度线结束 */
+            }
+        }
+    }
+}
+
+
+/* 基本样式 */
+
+
+/* tooltip样式 */
+
+[tooltip] {
+    position: relative;
+}
+
+[tooltip]::after {
+    display: none;
+    content: attr(tooltip);
+    position: absolute;
+    top: -66%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0;
+    width: 58px;
+    height: 16px;
+    border-radius: 2px;
+    font: normal 10px/16px "微軟雅黑";
+    text-align: center;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    margin-bottom: 0px;
+}
+
+[tooltip]::before {
+    display: none;
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: 5%;
+    border: 3px solid transparent;
+    border-bottom-width: 0;
+    z-index: 100;
+}
+
+[tooltip]:hover::after {
+    display: block;
+}
+
+[tooltip]:hover::before {
+    display: block;
+}
+
+[tooltip][placement^="top"]::after,
+[tooltip][placement^="top"]::before {
+    animation: anime-top 300ms ease-out forwards;
+}
+
+
+/* 气泡主题 */
+
+.tooltip-theme-dark,
+[tooltip]::after {
+    color: #313131;
+    background-color: #abe931;
+}
+
+
+/* .tooltip-theme-light,
+  [tooltip][effect="light"]::after {
+    color: #313131;
+    background-color: #fff;
+    border: 1px solid #313131;
+  } */
+
+
+/* 气泡位置 */
+
+
+/*----上----*/
+
+.tooltip-placement-top,
+[tooltip]:not([placement])::after,
+[tooltip][placement=""]::after,
+[tooltip][placement="top"]::after {
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* 三角形主题 */
+
+.triangle-theme-dark,
+[tooltip]::before {
+    border-top-color: #111d30;
+}
+
+
+/* .triangle-theme-light,
+  [tooltip][effect="light"]::before {
+    border-top-color: #313131;
+  } */
+
+
+/* 三角形位置 */
+
+
+/*----上----*/
+
+.triangle-placement-top,
+[tooltip]:not([placement])::before,
+[tooltip][placement=""]::before,
+[tooltip][placement="top"]::before {
+    bottom: calc(100% + 5px);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+/* @keyframes anime-top {
+    from {
+      opacity: 0.5;
+      bottom: 150%;
+    }
+  } */
+
+
+/* 當前調度時刻 */
+
+#clicactive #tooltiptext {
+    display: block;
+    width: 55px;
+    height: 12px;
+    background-color: #00ccff;
+    color: #202833;
+    text-align: center;
+    padding: 0px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 115%;
+    left: 50%;
+    border-radius: 2px;
+    margin-left: -26px;
+    font: normal 10px/12px "微軟雅黑";
+    z-index: 98;
+    margin-bottom: 0px;
+}
+
+#clicactive #tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #00ccff transparent transparent transparent;
+}

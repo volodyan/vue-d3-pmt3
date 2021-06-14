@@ -1,0 +1,253 @@
+.faceboradoutbox {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    // width: 100%;
+    width: 99%;
+    height: 100px;
+    background: $Theme_bgColor2;
+    .faceboradoutbox_left {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        width: 136px;
+        height: 66px;
+        background: $faceTitle_bgColor;
+        margin-left: 18px;
+        text-align: center;
+        font-size: $fontSize14;
+        font-family: $fontStyleWYYH;
+        font-weight: bold;
+        color: $face_fontColor;
+        line-height: 18px;
+        margin-right: 53px;
+    }
+    .faceboradoutbox_right {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        width: calc(100% - 197px);
+        .nowtimeoutbox {
+            display: flex;
+            flex-flow: row;
+            width: 124px;
+            justify-content: space-between;
+            .nowtimeoutbox_left {
+                .TimeTitle {
+                    font-size: $fontSize12;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_small_title_fontColor;
+                }
+                .Timenum {
+                    margin-top: 9px;
+                    font-size: $fontSize24;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_fontColor;
+                }
+            }
+            .nowtimeoutbox_rightline {
+                width: 1px;
+                height: 54px;
+                background: $face_line_color;
+            }
+        }
+        .nowGSLoutbox {
+            // margin-left: 30px;
+            display: flex;
+            flex-flow: row;
+            width: 188px;
+            justify-content: space-between;
+            .nowGSLoutbox_left {
+                .nowGSLoutbox_left_top {
+                    font-size: $fontSize12;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_small_title_fontColor;
+                }
+                .nowGSLoutbox_left_bottom {
+                    margin-top: 9px;
+                    display: flex;
+                    flex-flow: row;
+                    .nowGSLoutbox_left_bottom_left {
+                        margin-right: 15px;
+                        .num {
+                            font-size: $fontSize24;
+                            font-family: $fontStyleWYYH;
+                            font-weight: 400;
+                            color: $face_fontColor;
+                        }
+                        .percent {
+                            font-size: $fontSize12;
+                            font-family: $fontStyleWYYH;
+                            font-weight: 400;
+                            //  color: $face_tips_fontColor;
+                        }
+                        @extend.percentcolorblue;
+                        @extend.percentcolorred;
+                        // .activepercent {
+                        //     font-size: $fontSize12;
+                        //     font-family: $fontStyleWYYH;
+                        //     font-weight: 400;
+                        //     color: $face_tips_warn_fontColor;
+                        // }
+                    }
+                    .nowGSLoutbox_left_bottom_right {
+                        width: 90px;
+                    }
+                }
+            }
+            .nowGSLoutbox_rightline {
+                width: 1px;
+                height: 54px;
+                background: $face_line_color;
+            }
+        }
+        .nextddtime {
+            //  margin-left: 30px;
+            display: flex;
+            flex-flow: row;
+            width: 130px;
+            justify-content: space-between;
+            .nextddtime_left {
+                .TimeTitle {
+                    font-size: $fontSize12;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_small_title_fontColor;
+                }
+                .Timenum {
+                    margin-top: 9px;
+                    font-size: $fontSize24;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_fontColor;
+                }
+            }
+            .nextddtime_rightline {
+                width: 1px;
+                height: 54px;
+                background: $face_line_color;
+            }
+        }
+        .nextddSL {
+            //margin-left: 30px;
+            display: flex;
+            flex-flow: row;
+            width: 150px;
+            justify-content: space-between;
+            .nextddSL_left {
+                .Title {
+                    font-size: $fontSize12;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_small_title_fontColor;
+                }
+                .num {
+                    margin-top: 9px;
+                    font-size: $fontSize24;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    color: $face_fontColor;
+                }
+                .percent {
+                    font-size: $fontSize12;
+                    font-family: $fontStyleWYYH;
+                    font-weight: 400;
+                    //color: $face_tips_fontColor;
+                }
+                @extend.percentcolorblue;
+                @extend.percentcolorred;
+                // .activepercent {
+                //     font-size: $fontSize12;
+                //     font-family: $fontStyleWYYH;
+                //     font-weight: 400;
+                //     color: $face_tips_warn_fontColor;
+                // }
+            }
+            .nextddSL_rightline {
+                width: 1px;
+                height: 54px;
+                background: $face_line_color;
+            }
+        }
+        .dddjs {
+            //  margin-left: 30px;
+            margin-right: 53px;
+            .Title {
+                font-size: $fontSize12;
+                font-family: $fontStyleWYYH;
+                font-weight: 400;
+                color: $face_small_title_fontColor;
+            }
+            .num {
+                width: 162px;
+                height: 32px;
+                background: $time_bgColor;
+                margin-top: 9px;
+                font-size: $fontSize24;
+                font-family: $fontStyleWYYH;
+                font-weight: 400;
+                color: $time_fontColor;
+                .SvgIconClass {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
+
+//公用样式
+.percentcolorblue {
+    color: $face_tips_fontColor;
+}
+
+.percentcolorred {
+    color: $face_tips_warn_fontColor;
+}
+
+
+/* 倒计时一分钟样式开始 */
+
+.iscolorshow {
+    color: red;
+    letter-spacing: 2px;
+}
+
+.iscolorshow {
+    -webkit-animation: bglow 0.3s ease infinite;
+}
+
+.iscolorshow {
+    -webkit-animation: mglow 0.8s ease infinite;
+}
+
+.iscolorshow {
+    -webkit-animation: rglow 0.3s ease infinite;
+}
+
+@-webkit-keyframes bglow {
+    0% {
+        color: #ff0000;
+        text-shadow: 0 0 15px;
+    }
+}
+
+@-webkit-keyframes mglow {
+    50% {
+        color: rgb(145, 32, 40);
+        text-shadow: 0 0 15px;
+    }
+}
+
+@-webkit-keyframes rglow {
+    100% {
+        color: #940202;
+        text-shadow: 0 0 15px;
+    }
+}

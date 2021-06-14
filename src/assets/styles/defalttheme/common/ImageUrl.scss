@@ -1,0 +1,8 @@
+$ImageUrl:"http://121.40.242.176:15000/media/img/";
+$ImageUrlFront:"url(";
+$ImageUrlEnd:".png)";
+:export {
+    ImageUrl: $ImageUrl;
+    ImageUrlFront: $ImageUrlFront;
+    ImageUrlEnd: $ImageUrlEnd
+}

@@ -1,0 +1,71 @@
+@import '@/assets/styles/defalttheme/themeConfig/themeConfig';
+@import '@/assets/styles/defalttheme/common/common.scss';
+.rcdd {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    min-width: 1563px;
+    background: $List_Row_bgColor;
+    overflow-x: auto;
+    overflow-y: hidden;
+    .rcdd_outbox {
+        display: flex;
+        flex-flow: row;
+        width: calc(100% - 40px);
+        height: calc(100vh - 40px);
+        .rcdd_outbox_left_outbox {
+            width: 70%;
+            min-width: 1183px;
+            margin-right: 24px;
+            overflow: hidden;
+            .rcdd_outbox_left {
+                width: 100%;
+                // height: calc(100vh - 40px);
+                height: calc(100vh - 113px);
+                // border-bottom: 1px solid #D8E0E6;
+                overflow-y: auto;
+                overflow-x: hidden;
+                // position: relative;
+                @import './faceborad/faceborad';
+                @import './waterfactrybengtable/waterfactrybengtable';
+                @import './timeLine/timeLine';
+                @import './ddplate/ddplate';
+                @import './controlpresure/controlpresure';
+                @import './totalwater/totalwater';
+                @import './waterfactrycontent/waterfactrycontent';
+            }
+            // &:hover .tabbarStylebox {
+            //     display: block;
+            // }
+            // .tabbarStylebox {
+            //     display: none;
+            //     position: absolute;
+            //     bottom: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     z-index: 99;
+            // }
+            .tabbarStylebox {
+                // display: block;
+                // position: absolute;
+                // bottom: 0;
+                // left: 0;
+                width: 100%;
+                // z-index: 99;
+                @import './tabbar/tabbar';
+            }
+        }
+        .rcdd_outbox_right {
+            //width: calc(100% - 1140px - 24px);
+            width: 30%;
+            height: 100%;
+            // border: 1px solid #D8E0E6;
+            @import './dddirect/dddirect';
+        }
+    }
+}

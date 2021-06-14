@@ -1,0 +1,243 @@
+.dddirect {
+    width: 100%;
+    height: 100%;
+    .dddirect_Title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        background: #fff;
+        font-size: $fontSize18;
+        font-family: $fontStyleWYYH;
+        font-weight: bold;
+        color: $ListTitle_fontColor;
+        text-indent: 10px;
+    }
+    .dddirect_content {
+        width: 100%;
+        height: calc(100% - 40px);
+        overflow-x: hidden;
+        overflow-y: auto;
+        .dddirect_scrollinbox {
+            width: 100%;
+            .itembox {
+                margin: 10px;
+                cursor: pointer;
+                position: relative;
+                margin-left: 0;
+                margin-right: 0;
+                .Fatheroutbox {
+                    width: calc(100% - 20px);
+                    background: #fff;
+                    padding-bottom: 10px;
+                    min-height: 61px;
+                    &:hover {
+                        background: $List_Row_hover_bgColor;
+                    }
+                    .itembox_Title {
+                        display: flex;
+                        flex-flow: row;
+                        justify-content: space-between;
+                        margin: 0px 0 15px 10px;
+                        .itembox_Title_left {
+                            display: flex;
+                            flex-flow: row;
+                            margin-top: 10px;
+                            .itembox_Title_left_iconbox {
+                                width: 80px;
+                                height: 20px;
+                                border: 1px solid #A4ACB4;
+                                background-color: #A4ACB4;
+                                border-radius: 80px 0 0 80px;
+                                text-align: center;
+                                line-height: 20px;
+                                font-size: 12px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #FFFFFF;
+                                margin-right: 10px;
+                            }
+                            .XTCreateStyle {
+                                border: 1px solid #FF7074;
+                                background-color: #FF7074;
+                            }
+                            .RGCreateStyle {
+                                border: 1px solid #64BFD4;
+                                background-color: #64BFD4;
+                            }
+                            .itembox_Title_left_time {
+                                font-size: $fontSize14;
+                                font-family: $fontStyleWYYH;
+                                font-weight: bold;
+                                color: $ListTitle_fontColor;
+                                margin-top: 2px;
+                            }
+                        }
+                        .itembox_Title_right {
+                            height: 18px;
+                            background: $Button_bgColor;
+                            border-radius: 9px;
+                            font-size: $fontSize12;
+                            font-family: $fontStyleWYYH;
+                            font-weight: 400;
+                            color: $Button_fontColor;
+                            padding-left: 10px;
+                            padding-right: 10px;
+                            margin-top: 10px;
+                            margin-right: 10px;
+                        }
+                    }
+                    .itembox_messge {
+                        font-size: $fontSize12;
+                        font-family: $fontStyleWYYH;
+                        font-weight: 400;
+                        color: $ListText_fontColor;
+                        margin: 0px 0 15px 10px;
+                    }
+                    .itembox_Button {
+                        display: flex;
+                        flex-flow: row;
+                        .itembox_Button_left {
+                            width: 63px;
+                            height: 18px;
+                            background: #FFFFFF;
+                            border: 1px solid #D8E0E6;
+                            border-radius: 2px;
+                            margin-left: 12px;
+                            font-size: 12px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #6E7C8B;
+                            text-align: center;
+                            line-height: 16px;
+                        }
+                        .itembox_Button_right {
+                            width: 63px;
+                            height: 18px;
+                            background: #FFFFFF;
+                            border: 1px solid #D8E0E6;
+                            border-radius: 2px;
+                            margin-left: 12px;
+                            font-size: 12px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #6E7C8B;
+                            text-align: center;
+                            line-height: 16px;
+                        }
+                    }
+                }
+                .LJbox {
+                    position: absolute;
+                    left: 4px;
+                    top: 102px;
+                }
+                .itemChildbox {
+                    margin: 10px;
+                    margin-left: 20px;
+                    .Childoutbox {
+                        width: calc(100% - 10px);
+                        min-height: 61px;
+                        background: #fff;
+                        padding-bottom: 10px;
+                        cursor: pointer;
+                        &:hover {
+                            background: $List_Row_hover_bgColor;
+                        }
+                        .Childoutbox_itembox_Title {
+                            display: flex;
+                            flex-flow: row;
+                            justify-content: space-between;
+                            margin: 0px 0 15px 10px;
+                            .Childoutbox_itembox_Title_left {
+                                display: flex;
+                                flex-flow: row;
+                                margin-top: 10px;
+                                .Childoutbox_itembox_Title_left_iconbox {
+                                    width: 80px;
+                                    height: 20px;
+                                    border: 1px solid #A4ACB4;
+                                    background-color: #A4ACB4;
+                                    border-radius: 80px 0 0 80px;
+                                    text-align: center;
+                                    line-height: 20px;
+                                    font-size: 12px;
+                                    font-family: Microsoft YaHei;
+                                    font-weight: 400;
+                                    color: #FFFFFF;
+                                    margin-right: 10px;
+                                }
+                                .XTCreateStyle {
+                                    border: 1px solid #FF7074;
+                                    background-color: #FF7074;
+                                }
+                                .RGCreateStyle {
+                                    border: 1px solid #64BFD4;
+                                    background-color: #64BFD4;
+                                }
+                                .Childoutbox_itembox_Title_left_time {
+                                    font-size: $fontSize14;
+                                    font-family: $fontStyleWYYH;
+                                    font-weight: bold;
+                                    color: $ListTitle_fontColor;
+                                    margin-top: 2px;
+                                }
+                            }
+                            .Childoutbox_itembox_Title_right {
+                                height: 18px;
+                                background: $Button_bgColor;
+                                border-radius: 9px;
+                                font-size: $fontSize12;
+                                font-family: $fontStyleWYYH;
+                                font-weight: 400;
+                                color: $Button_fontColor;
+                                padding-left: 10px;
+                                padding-right: 10px;
+                                margin-top: 10px;
+                                margin-right: 10px;
+                            }
+                        }
+                        .Childoutbox_itembox_messge {
+                            font-size: $fontSize12;
+                            font-family: $fontStyleWYYH;
+                            font-weight: 400;
+                            color: $ListText_fontColor;
+                            margin: 0px 0 15px 10px;
+                        }
+                        .Childoutbox_itembox_Button {
+                            display: flex;
+                            flex-flow: row;
+                            .Childoutbox_itembox_Button_left {
+                                width: 63px;
+                                height: 18px;
+                                background: #FFFFFF;
+                                border: 1px solid #D8E0E6;
+                                border-radius: 2px;
+                                margin-left: 12px;
+                                font-size: 12px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #6E7C8B;
+                                text-align: center;
+                                line-height: 16px;
+                            }
+                            .Childoutbox_itembox_Button_right {
+                                width: 63px;
+                                height: 18px;
+                                background: #FFFFFF;
+                                border: 1px solid #D8E0E6;
+                                border-radius: 2px;
+                                margin-left: 12px;
+                                font-size: 12px;
+                                font-family: Microsoft YaHei;
+                                font-weight: 400;
+                                color: #6E7C8B;
+                                text-align: center;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
